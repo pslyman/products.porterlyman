@@ -7,8 +7,14 @@ import { PageNotFoundComponent } from "./page-not-found/page-not-found.component
 import { PizzaDoughCalculatorChangeLog } from "./pizzaDoughCalculator/pizzadoughcalculatorchangelog/pizzadoughcalculatorchangelog.component";
 import { PremiumchangelogComponent } from "./pizzaDoughPremium/premiumchangelog/premiumchangelog.component";
 import { OpenTrackFitChangelogComponent } from "./openTrackFit/opentrackfitchangelog/opentrackfitchangelog.component";
+import { HomeComponent } from "./home/home.component";
 
 const routes: Routes = [
+  {
+    path: "home",
+    component: HomeComponent,
+    pathMatch: "full",
+  },
   {
     path: "PizzaDoughCalculator",
     component: PizzaDoughCalculator,
@@ -73,7 +79,7 @@ const routes: Routes = [
     ],
   },
 
-  { path: "", redirectTo: "/pageNotFound", pathMatch: "full" },
+  { path: "", redirectTo: "/home", pathMatch: "full" },
   { path: "**", redirectTo: "/pageNotFound", pathMatch: "full" },
   { path: "pageNotFound", component: PageNotFoundComponent },
 ];
