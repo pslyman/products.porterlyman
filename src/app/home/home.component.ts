@@ -124,6 +124,9 @@ export class HomeComponent implements OnInit, AfterContentInit {
       link: "http://www.porterlyman.com",
       source: "../assets/pl-icon.png",
     },
+  ];
+
+  portfolioMisc = [
     {
       title: "clean-card",
       text:
@@ -131,9 +134,6 @@ export class HomeComponent implements OnInit, AfterContentInit {
       link: "https://github.com/pslyman/clean-card",
       source: "../assets/clean-cards-icon.png",
     },
-  ];
-
-  portfolioMisc = [
     {
       title: "Github/pslyman",
       text: "Miscellenious contributions, side projects, and hobbies.",
