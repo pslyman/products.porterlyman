@@ -1,1 +1,62 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+    overflow: scroll;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+  }
+  
+  html,
+  body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+  }
+  
+  h1 {
+    font-size: xx-large;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin: 0;
+    line-height: 72px;
+  }
+  
+  h2,
+  h3 {
+    margin: 0;
+  }
+  
+  h3 {
+    font-size: initial;
+    font-weight: unset;
+    font-style: italic;
+  }
+  
+  p {
+    font-size: 15px;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    font-family: Rubik, Verdana;
+    color: #4e4e4e;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px auto;
+    font-weight: bold;
+  }
+  
+  @font-face {
+    font-family: Rubik;
+    src: url(\assets\Rubik-Regular.ttf) format("truetype");
+  }
+  
