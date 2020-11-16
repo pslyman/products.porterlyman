@@ -1,0 +1,6 @@
+<body>
+  <h2>Changelog - OpenTrackFit</h2>
+  <div *ngFor="let item of history.slice().reverse()">
+    <p>{{ item.version }}<br />- <span [innerHTML]="item.notes"></span></p>
+  </div>
+</body>
