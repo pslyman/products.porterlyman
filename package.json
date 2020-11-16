@@ -3,11 +3,16 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "node server.js",
+    "build": "ng build --aot --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
+  },
+  "postinstall": "ng build --aot --prod",
+  "engines": {
+    "node": "12.18.1",
+    "npm": "6.13.7"
   },
   "private": true,
   "dependencies": {
