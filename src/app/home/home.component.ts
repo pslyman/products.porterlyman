@@ -154,7 +154,7 @@ export class HomeComponent implements OnInit, AfterContentInit {
     {
       title: "clean-card",
       text:
-        "Open source version of this site with a setup and hosting guide, including buying/setting up a domain, hosting, and email aliasing. Powered by Angular and Heroku.",
+        "Open source version of porterlyman.com with a setup and hosting guide, including buying/setting up a domain, hosting, and email aliasing. Powered by Angular and Heroku.",
       link: "https://github.com/pslyman/clean-card",
       source: "../assets/clean-cards-icon.png",
     },
@@ -176,7 +176,7 @@ export class HomeComponent implements OnInit, AfterContentInit {
 
   openLinkUrl(url) {
     if (url) {
-      if (url.includes("www")) {
+      if (url.includes("http")) {
         window.open(url, "_blank");
       } else {
         this.router.navigateByUrl(url.toString());
