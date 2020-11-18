@@ -15,6 +15,9 @@ import { OpenTrackFitChangelogComponent } from "./openTrackFit/opentrackfitchang
 import { CommonModule } from "@angular/common";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { OTFproductDetailsComponent } from './openTrackFit/otfproduct-details/otfproduct-details.component';
+import { PDPproductDetailsComponent } from './pizzaDoughPremium/pdpproduct-details/pdpproduct-details.component';
+import { PDCproductDetailsComponent } from './pizzaDoughCalculator/pdcproduct-details/pdcproduct-details.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     PizzaDoughCalculatorChangeLog,
     PremiumchangelogComponent,
     OpenTrackFitChangelogComponent,
-    HomeComponent
+    HomeComponent,
+    OTFproductDetailsComponent,
+    PDPproductDetailsComponent,
+    PDCproductDetailsComponent
   ],
   imports: [
     BrowserModule,

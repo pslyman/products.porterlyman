@@ -1,3 +1,4 @@
+import { OTFproductDetailsComponent } from "./openTrackFit/otfproduct-details/otfproduct-details.component";
 import { OpenTrackFit } from "./openTrackFit/openTrackFit.component";
 import { PizzaDoughPremium } from "./pizzaDoughPremium/pizzaDoughPremium.component";
 import { PizzaDoughCalculator } from "./pizzaDoughCalculator/pizzaDoughCalculator.component";
@@ -8,12 +9,13 @@ import { PizzaDoughCalculatorChangeLog } from "./pizzaDoughCalculator/pizzadough
 import { PremiumchangelogComponent } from "./pizzaDoughPremium/premiumchangelog/premiumchangelog.component";
 import { OpenTrackFitChangelogComponent } from "./openTrackFit/opentrackfitchangelog/opentrackfitchangelog.component";
 import { HomeComponent } from "./home/home.component";
+import { PDPproductDetailsComponent } from './pizzaDoughPremium/pdpproduct-details/pdpproduct-details.component';
+import { PDCproductDetailsComponent } from './pizzaDoughCalculator/pdcproduct-details/pdcproduct-details.component';
 
 const routes: Routes = [
   {
     path: "home",
     component: HomeComponent,
-    pathMatch: "full",
   },
   {
     path: "PizzaDoughCalculator",
@@ -23,7 +25,7 @@ const routes: Routes = [
         path: "changelog",
         component: PizzaDoughCalculatorChangeLog,
       },
-
+      { path: "about", component: PDCproductDetailsComponent },
       {
         path: "**",
         redirectTo: "/pageNotFound",
@@ -44,7 +46,7 @@ const routes: Routes = [
         path: "changelog",
         component: PremiumchangelogComponent,
       },
-
+      { path: "about", component: PDPproductDetailsComponent },
       {
         path: "**",
         redirectTo: "/pageNotFound",
@@ -65,7 +67,7 @@ const routes: Routes = [
         path: "changelog",
         component: OpenTrackFitChangelogComponent,
       },
-
+      { path: "about", component: OTFproductDetailsComponent },
       {
         path: "**",
         redirectTo: "/pageNotFound",

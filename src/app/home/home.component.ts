@@ -49,7 +49,7 @@ import { Router, ActivatedRoute } from "@angular/router";
         ),
 
         // Cards will disappear sequentially with the delay of 300ms
-        query(
+/*         query(
           ":leave",
           stagger("6ms", [
             animate(
@@ -70,13 +70,39 @@ import { Router, ActivatedRoute } from "@angular/router";
             ),
           ]),
           { optional: true }
+        ), */
+      ]),
+    ]),
+    trigger("cardAnimationNoStagger", [
+      transition(":enter", [
+        animate(
+          ".5s ease-out",
+          keyframes([
+            style({
+              opacity: 0,
+              transform: "translateY(-6px) scale(1.05)",
+              offset: 0,
+            }),
+            style({ opacity: 1, transform: "translateY(0)", offset: 1 }),
+          ])
         ),
       ]),
+/*       transition(":leave", [
+        style({ opacity: 1, transform: "translateY(0)", offset: 0 }),
+        animate(
+          ".35s ease-out",
+          style({
+            opacity: 0,
+            transform: "translateY(6px) scale(1.05)",
+            offset: 1,
+          })
+        ),
+      ]), */
     ]),
   ],
 })
 export class HomeComponent implements OnInit, AfterContentInit {
-  constructor(private router: Router, private route: ActivatedRoute) {}
+  constructor(private router: Router) {}
 
   p: string;
   i: number;
@@ -88,16 +114,14 @@ export class HomeComponent implements OnInit, AfterContentInit {
       title: "Pizza Dough Calculator",
       text:
         "Passion product, using 20 year-old formulas and bringing the well known app into your hands. The original version. ",
-      link:
-        "https://play.google.com/store/apps/details?id=pizza.dough.calculator",
+      link: "/PizzaDoughCalculator/about",
       source: "../assets/pizza-free.png",
     },
     {
       title: "Pizza Dough Premium",
       text:
         "Same full-featured product, but with added premium features for the extra dedicated pizza chefs.",
-      link:
-        "https://play.google.com/store/apps/details?id=pizza.dough.calculator.free",
+        link: "/PizzaDoughPremium/about",
       source: "../assets/pizza-icon.png",
     },
 
@@ -105,7 +129,7 @@ export class HomeComponent implements OnInit, AfterContentInit {
       title: "OpenTrackFit",
       text:
         "Open Source app project for workout tracking. Includes in-app timers, prioritization, and other useful features for tracking.",
-      link: "https://github.com/pslyman/OpenTrackFit",
+        link: "/OpenTrackFit/about",
       source: "../assets/opentrackfit-icon.png",
     },
   ];
@@ -152,7 +176,11 @@ export class HomeComponent implements OnInit, AfterContentInit {
 
   openLinkUrl(url) {
     if (url) {
-      window.open(url, "_blank");
+      if (url.includes("www")) {
+        window.open(url, "_blank");
+      } else {
+        this.router.navigateByUrl(url.toString());
+      }
     }
   }
 
