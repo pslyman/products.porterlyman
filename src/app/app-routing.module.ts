@@ -9,8 +9,8 @@ import { PizzaDoughCalculatorChangeLog } from "./pizzaDoughCalculator/pizzadough
 import { PremiumchangelogComponent } from "./pizzaDoughPremium/premiumchangelog/premiumchangelog.component";
 import { OpenTrackFitChangelogComponent } from "./openTrackFit/opentrackfitchangelog/opentrackfitchangelog.component";
 import { HomeComponent } from "./home/home.component";
-import { PDPproductDetailsComponent } from './pizzaDoughPremium/pdpproduct-details/pdpproduct-details.component';
-import { PDCproductDetailsComponent } from './pizzaDoughCalculator/pdcproduct-details/pdcproduct-details.component';
+import { PDPproductDetailsComponent } from "./pizzaDoughPremium/pdpproduct-details/pdpproduct-details.component";
+import { PDCproductDetailsComponent } from "./pizzaDoughCalculator/pdcproduct-details/pdcproduct-details.component";
 
 const routes: Routes = [
   {
@@ -20,6 +20,7 @@ const routes: Routes = [
   {
     path: "PizzaDoughCalculator",
     component: PizzaDoughCalculator,
+
     children: [
       {
         path: "changelog",
@@ -27,13 +28,13 @@ const routes: Routes = [
       },
       { path: "about", component: PDCproductDetailsComponent },
       {
-        path: "**",
+        path: "PizzaDoughCalculator/**",
         redirectTo: "/pageNotFound",
         pathMatch: "full",
       },
       {
         path: "",
-        redirectTo: "/pageNotFound",
+        redirectTo: "/PizzaDoughCalculator/about",
         pathMatch: "full",
       },
     ],
@@ -48,13 +49,13 @@ const routes: Routes = [
       },
       { path: "about", component: PDPproductDetailsComponent },
       {
-        path: "**",
+        path: "PizzaDoughPremium/**",
         redirectTo: "/pageNotFound",
         pathMatch: "full",
       },
       {
         path: "",
-        redirectTo: "/pageNotFound",
+        redirectTo: "/PizzaDoughPremium/about",
         pathMatch: "full",
       },
     ],
@@ -69,13 +70,13 @@ const routes: Routes = [
       },
       { path: "about", component: OTFproductDetailsComponent },
       {
-        path: "**",
+        path: "OpenTrackFit/**",
         redirectTo: "/pageNotFound",
         pathMatch: "full",
       },
       {
         path: "",
-        redirectTo: "/pageNotFound",
+        redirectTo: "/OpenTrackFit/about",
         pathMatch: "full",
       },
     ],
