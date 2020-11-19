@@ -1,3 +1,4 @@
+import { ServicesComponent } from "./services/services.component";
 import { OTFproductDetailsComponent } from "./openTrackFit/otfproduct-details/otfproduct-details.component";
 import { OpenTrackFit } from "./openTrackFit/openTrackFit.component";
 import { PizzaDoughPremium } from "./pizzaDoughPremium/pizzaDoughPremium.component";
@@ -80,6 +81,10 @@ const routes: Routes = [
         pathMatch: "full",
       },
     ],
+  },
+  {
+    path: "Services",
+    component: ServicesComponent,
   },
 
   { path: "", redirectTo: "/home", pathMatch: "full" },

@@ -18,6 +18,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { OTFproductDetailsComponent } from './openTrackFit/otfproduct-details/otfproduct-details.component';
 import { PDPproductDetailsComponent } from './pizzaDoughPremium/pdpproduct-details/pdpproduct-details.component';
 import { PDCproductDetailsComponent } from './pizzaDoughCalculator/pdcproduct-details/pdcproduct-details.component';
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { PDCproductDetailsComponent } from './pizzaDoughCalculator/pdcproduct-de
     HomeComponent,
     OTFproductDetailsComponent,
     PDPproductDetailsComponent,
-    PDCproductDetailsComponent
+    PDCproductDetailsComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,

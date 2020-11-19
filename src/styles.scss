@@ -1,72 +1,71 @@
 html {
-    overflow: scroll;
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+/Edge */
-    user-select: none; /* Standard */
-  }
-  
-  ::-webkit-scrollbar {
-    width: 0px;
-    background: transparent; /* make scrollbar transparent */
-  }
-  
-  html,
-  body {
-    background-color: rgb(255, 255, 255);
-    margin: 0;
-  }
-  
-  h1 {
-    font-size: xx-large;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    margin: 0;
-    line-height: 72px;
-  }
-  
-  h2,
-  h3 {
-    margin: 0;
-  }
-  
-  h3 {
-    font-size: initial;
-    font-weight: unset;
-    font-style: italic;
-  }
-  
-  p {
-    font-size: 15px;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  p {
-    font-family: Rubik, Verdana;
-    color: #4e4e4e;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 10px auto;
-    font-weight: bold;
-  }
-  
-  @font-face {
-    font-family: Rubik;
-    src: url(\assets\Rubik-Regular.ttf) format("truetype");
-  }
-  
-  
+  overflow: scroll;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+html,
+body {
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+}
+
+h1 {
+  font-size: xx-large;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0;
+  line-height: 72px;
+}
+
+h2,
+h3 {
+  margin: 0;
+}
+
+h3 {
+  font-size: initial;
+  font-weight: unset;
+  font-style: italic;
+}
+
+p {
+  font-size: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  font-family: Rubik, Verdana;
+  color: #4e4e4e;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px auto;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url(\assets\Rubik-Regular.ttf) format("truetype");
+}
+
 .button {
   height: 15px;
   display: flex;
   align-items: center;
   background-color: #677979;
-  
+
   padding: 15px;
   h4 {
     height: 100%;
@@ -74,6 +73,29 @@ html {
     display: flex;
     align-items: center;
     color: rgb(228, 228, 228);
+  }
+  h4:hover {
+    cursor: pointer;
+  }
+}
+
+.button-light {
+  height: 15px;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+
+  padding: 15px;
+  box-shadow: 3px 3px 9px #888888;
+  z-index: 1000;
+  h4 {
+    margin: auto;
+    width: calc(50% - 10px);
+    height: 100%;
+    padding-right: 35px;
+    display: flex;
+    align-items: center;
+    color: #525252;
   }
   h4:hover {
     cursor: pointer;
@@ -104,7 +126,7 @@ html {
 
 .google-play-button {
   height: 80px;
-  
+
   margin-left: -8px;
 }
 
@@ -112,3 +134,22 @@ html {
   cursor: pointer;
 }
 
+@media (max-width: 1250px) {
+
+  .button-light {
+    h4 {
+      margin: auto;
+      width: calc(75% - 10px);
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .button-light {
+    padding: 10px;
+    h4 {
+      margin: auto;
+      width: 100%;
+    }
+  }
+}

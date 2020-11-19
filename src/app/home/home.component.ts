@@ -109,6 +109,16 @@ export class HomeComponent implements OnInit, AfterContentInit {
 
   title = "Products";
 
+  portfolioServices = [
+    {
+      title: "Portfolio Builder",
+      text:
+        "Looking to show off your business, personal resume, portfolio? Need a landing page for public presence? I can help. Click here to learn more.",
+      link: "/Services"/* ,
+      source: "../assets/pizza-free.png", */
+    }
+  ];
+
   portfolioApps = [
     {
       title: "Pizza Dough Calculator",
@@ -140,13 +150,13 @@ export class HomeComponent implements OnInit, AfterContentInit {
       text:
         "Made in partnership with the owner (and good friend) of St. George Embossing as a front for his business.",
       link: "http://www.stgembossing.com",
-      source: "../assets/embossing-stg.png",
+      /* source: "../assets/embossing-stg.png", */
     },
     {
       title: "porterlyman.com",
       text: "Of which this is a subdomain of.",
       link: "http://www.porterlyman.com",
-      source: "../assets/pl-icon.png",
+      /* source: "../assets/pl-icon.png", */
     },
   ];
 
