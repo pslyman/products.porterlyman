@@ -19,6 +19,8 @@ import { OTFproductDetailsComponent } from './openTrackFit/otfproduct-details/ot
 import { PDPproductDetailsComponent } from './pizzaDoughPremium/pdpproduct-details/pdpproduct-details.component';
 import { PDCproductDetailsComponent } from './pizzaDoughCalculator/pdcproduct-details/pdcproduct-details.component';
 import { ServicesComponent } from './services/services.component';
+import { SiteBuilderComponent } from './services/site-builder/site-builder.component';
+import { AppBuilderComponent } from './services/app-builder/app-builder.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { ServicesComponent } from './services/services.component';
     OTFproductDetailsComponent,
     PDPproductDetailsComponent,
     PDCproductDetailsComponent,
-    ServicesComponent
+    ServicesComponent,
+    SiteBuilderComponent,
+    AppBuilderComponent
   ],
   imports: [
     BrowserModule,

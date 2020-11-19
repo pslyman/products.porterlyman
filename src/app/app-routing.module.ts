@@ -1,3 +1,5 @@
+import { AppBuilderComponent } from "./services/app-builder/app-builder.component";
+import { SiteBuilderComponent } from "./services/site-builder/site-builder.component";
 import { ServicesComponent } from "./services/services.component";
 import { OTFproductDetailsComponent } from "./openTrackFit/otfproduct-details/otfproduct-details.component";
 import { OpenTrackFit } from "./openTrackFit/openTrackFit.component";
@@ -83,8 +85,25 @@ const routes: Routes = [
     ],
   },
   {
-    path: "Services",
+    path: "services",
     component: ServicesComponent,
+    children: [
+      {
+        path: "site-builder",
+        component: SiteBuilderComponent,
+      },
+      { path: "app-builder", component: AppBuilderComponent },
+      {
+        path: "services/**",
+        redirectTo: "/pageNotFound",
+        pathMatch: "full",
+      },
+      {
+        path: "",
+        redirectTo: "/home",
+        pathMatch: "full",
+      },
+    ],
   },
 
   { path: "", redirectTo: "/home", pathMatch: "full" },

@@ -1,0 +1,92 @@
+<div class="button-light"><h4 routerLink="/">Back</h4></div>
+<body class="services" [@cardAnimationNoStagger]>
+  <h1>Portfolio Builder</h1>
+  <p>
+    For a very competitive price, you can host a site showing off any of the
+    following:
+  </p>
+  <p>
+    <strong>Portfolio.</strong> For those who want to show off what they can do
+    and what they've accomplished already.
+  </p>
+  <p>
+    <strong>Business Landing Page.</strong> Looking to promote your new
+    business? Facebook and Etsy are nice, but having a website front will add
+    polish to your trade.
+  </p>
+  <p>
+    <strong>Resume.</strong> Hoping to get hired, or have a public presence?
+    Getting your own JohnDoe.com can help. You can show off your skillset,
+    portfolio, and even have a unique URL to send to prospective employers for
+    them to view extra details of your work experience and history.
+  </p><br><br>
+
+  <h2>Pricing</h2><br>
+  <p>I believe that having a website shouldn't be a financial burden.</p>
+  <h3>What they offer:</h3>
+  <p>
+    Squarespace.com - $12 monthly (paid annually)<br />
+    Wix.com - $14 monthly (paid annually)<br /><br />
+    <strong>Features:</strong> <br />
+    <span class="indented"> Custom Domain <br /></span>
+    <span class="indented">SSL Certification <br /></span>
+    <span class="indented">Mobile-Optimized<br /></span>
+    <br />
+  </p>
+  <h3>What I offer:</h3>
+  <p>
+    $5 monthly ($60 paid annually) as free subdomain<br />
+    $6 monthly ($72 paid annually) with custom domain
+  </p><br><br>
+  <h2>Features</h2><br>
+</body>
+
+<div class="features">
+  <div
+    *ngFor="let item of features"
+    class="list-items-flex"
+    (click)="openFeatures(item.id)"
+    [ngClass]="{ 'cast-a-shadow': item.toggled }"
+  >
+    <div>
+      <p class="item-title">{{ item.title }}</p>
+      <div>
+        <img
+          src="../../assets/arrow-right.png"
+          class="arrow"
+          [ngClass]="{ 'arrow-turn': item.toggled }"
+        />
+      </div>
+    </div>
+    <p
+      [ngClass]="{ 'fade-out': !item.toggled }"
+      class="animate-fade-in"
+      [innerHTML]="item.content"
+    ></p>
+  </div>
+</div>
+<div class="services">
+  <p>
+    <strong>How is this done?</strong><br />
+    For web building I use Angular (with Typescript, Javascript, HTML, CSS,
+    SASS), and Node.js.<br />
+    Code is all hosted securely and privately from Github.com.<br />
+    For website hosting I use Heroku.com. They handle hosting, encryption, and
+    metrics.<br />
+    For domain handling I use Google Domains.<br />
+  </p>
+  <p>
+    <strong>What's the catch?</strong><br />
+    None!<br />
+    <br />In the event that your website incurs very high traffic, we can
+    discuss a higher rate to cover the cost, <em>or</em> transfer ownership so
+    that you can be solely responsible for costs.<br />In the event of a
+    transferral, I will provide a prorated reimbursement, minus labor (factored
+    into the full year).
+  </p>
+
+  <p>
+    <strong>Interested?</strong><br />
+    This service isn't live quite yet, but check back soon!
+  </p>
+</div>
