@@ -53,7 +53,7 @@ export class ServicesComponent implements OnInit {
       title: "Full Access and Transparency",
       content: `You have full access to the codebase, hosting platform, and domain provider.
       After the first year, if you want to take over the code and hosting, you can
-      assume full ownership end business.<br />`,
+      assume full ownership and end our business relationship.<br />`,
       toggled: false,
     },
     {
@@ -113,29 +113,7 @@ export class ServicesComponent implements OnInit {
       metrics.<br />
       For domain handling I use Google Domains.<br />`,
       toggled: false,
-    }/* ,
-    {
-      id: 8,
-      title: "How is this done?",
-      content: `For web building I use Angular (with Typescript, Javascript, HTML, CSS,
-      SASS), and Node.js.<br />
-      Code is all hosted securely and privately from Github.com.<br />
-      For website hosting I use Heroku.com. They handle hosting, encryption, and
-      metrics.<br />
-      For domain handling I use Google Domains.<br />`,
-      toggled: false,
-    },
-    {
-      id: 9,
-      title: "What's the catch?",
-      content: `None!<br />
-      <br />In the event that your website incurs very high traffic, we can
-      discuss a higher rate to cover the cost, <em>or</em> transfer ownership so
-      that you can be solely responsible for costs.<br />In the event of a transferral, I
-      will provide a prorated reimbursement, minus labor (factored into the full
-      year).<br />`,
-      toggled: false,
-    }, */
+    }
   ];
 
   constructor() {}

@@ -85,9 +85,11 @@
 }
 
 @media (max-width: 1250px) {
+
   .services {
     margin: auto;
     width: 75%;
+    padding-top: 20px;
   }
   .features {
     margin: auto;
@@ -99,6 +101,7 @@
   .services {
     margin: 0 10px;
     width: calc(100% - 20px);
+    padding-top: 10px;
   }
   .features {
     margin: auto;
