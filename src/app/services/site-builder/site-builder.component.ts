@@ -59,7 +59,7 @@ export class SiteBuilderComponent implements OnInit {
     {
       id: 4,
       title: "Email Aliasing",
-      content: `I will help you set up an email alias to work along side your existing Gmail
+      content: `Available with purchase of a custom domain. <br /><br />I will help you set up an email alias to work along side your existing Gmail
       account at no extra cost. What does this mean? <br /><br />
       As an example, if your email is JohnDoe@Gmail.com, and you own the domain
       JohnsRepairShop.com, you'd have an added option to send emails from

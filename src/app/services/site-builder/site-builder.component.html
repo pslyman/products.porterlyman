@@ -1,5 +1,5 @@
 <div class="button-light"><h4 routerLink="/">Back</h4></div>
-<body class="services" [@cardAnimationNoStagger]>
+<div class="services section-gradient start-element" [@cardAnimationNoStagger]>
   <h1>Portfolio Builder</h1>
   <p>
     For a very competitive price, you can host a site showing off any of the
@@ -19,9 +19,12 @@
     Getting your own JohnDoe.com can help. You can show off your skillset,
     portfolio, and even have a unique URL to send to prospective employers for
     them to view extra details of your work experience and history.
-  </p><br><br>
-
-  <h2>Pricing</h2><br>
+  </p>
+  <br /><br />
+</div>
+<div class="services section-gradient" [@cardAnimationNoStagger]>
+  <h2>Pricing</h2>
+  <br />
   <p>I believe that having a website shouldn't be a financial burden.</p>
   <h3>What they offer:</h3>
   <p>
@@ -37,11 +40,13 @@
   <p>
     $5 monthly ($60 paid annually) as free subdomain<br />
     $6 monthly ($72 paid annually) with custom domain
-  </p><br><br>
-  <h2>Features</h2><br>
-</body>
+  </p>
+  <br /><br />
+</div>
 
-<div class="features">
+<div class="features" [@cardAnimationNoStagger]>
+  <h2>Features</h2>
+  <br />
   <div
     *ngFor="let item of features"
     class="list-items-flex"
@@ -65,7 +70,7 @@
     ></p>
   </div>
 </div>
-<div class="services">
+<div class="services section-gradient end-element" [@cardAnimationNoStagger]>
   <p>
     <strong>How is this done?</strong><br />
     For web building I use Angular (with Typescript, Javascript, HTML, CSS,
