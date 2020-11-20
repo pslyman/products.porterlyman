@@ -1,8 +1,6 @@
 .services {
   background-color: transparent;
   margin: auto;
-
-  /*  width: 50%; */
   width: calc(50%);
   p {
     line-height: 21px;
@@ -21,7 +19,7 @@
 .features {
   background: linear-gradient(white 0%, #fdfdfd 100%);
   padding: 10px 4px 10px 4px;
-  box-shadow: 1px 20px 15px 0px #888888;
+  box-shadow: 0 20px 15px 0px #888888;
   margin: auto;
   width: calc(50% + 12px);
   h2 {
@@ -96,15 +94,16 @@
 .section-gradient {
   background: linear-gradient(white 0%, #fdfdfd 100%);
   padding: 10px 10px 10px 10px;
-  box-shadow: 1px 20px 15px 0px #888888;
+  box-shadow: 0 20px 15px 0px #888888;
 }
 
 .start-element {
-  margin-top: 20px !important;
+  margin-top: 8px !important;
 }
 
 .end-element {
   margin-bottom: 40px !important;
+  box-shadow: 0 20px 20px 0px #888888;
 }
 
 @media (max-width: 1250px) {
@@ -120,8 +119,6 @@
   }
   .section-gradient {
     background: linear-gradient(white 0%, #f8f8f8 100%);
-    padding: 10px 10px 10px 10px;
-    box-shadow: 1px 20px 15px 0px #888888;
   }
 }
 
@@ -139,10 +136,13 @@
   }
   .section-gradient {
     background: linear-gradient(white 0%, #f8f8f8 100%);
-    padding: 10px 10px 10px 10px;
-    box-shadow: 1px 20px 15px 0px #888888;
+
   }
   .end-element {
     margin-bottom: 0 !important;
   }
+  .start-element {
+    margin-top: 1px !important;
+  }
+  
 }
