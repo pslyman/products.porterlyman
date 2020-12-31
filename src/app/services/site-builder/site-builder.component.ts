@@ -34,7 +34,7 @@ export class SiteBuilderComponent implements OnInit {
     {
       id: 1,
       title: "Custom Domain Options",
-      content: `Free subdomain: <em>yourBusinessName.siteplatinum.com</em>.<br />
+      content: `Free subdomain: <em>yourBusinessName.devlay.com</em>.<br />
       Custom domain: <em>yourBusinessName.com</em>.<br /><br />
       Custom domains usually run $12 a year to buy/own. I won't charge you a dime
       more than that.<br /><br />
