@@ -165,6 +165,12 @@ export class HomeComponent implements OnInit, AfterContentInit {
       link: "http://www.porterlyman.com",
       source: "../assets/pl-icon.png",
     },
+    {
+      title: "devlay.com",
+      text: "One of the last short, readable domains. Used for subdomains with hosted sites I make for people.",
+      link: "https://www.devlay.com",
+      source: "../assets/pl-icon.png",
+    },
   ];
 
   portfolioMisc = [
@@ -174,6 +180,12 @@ export class HomeComponent implements OnInit, AfterContentInit {
         "Open source version of porterlyman.com with a setup and hosting guide, including buying/setting up a domain, hosting, and email aliasing. Powered by Angular and Vercel (or Heroku).",
       link: "https://github.com/pslyman/clean-card",
       source: "../assets/clean-cards-icon.png",
+    },
+    {
+      title: "pizza.devlay.com",
+      text: "A website made by my brother as a recreation of the flash dough tools, and I contribute to the codebase. His site inspired my apps.",
+      link: "https://www.pizza.devlay.com",
+      source: "../assets/pl-icon.png",
     },
     {
       title: "Github/pslyman",
