@@ -169,7 +169,7 @@ export class HomeComponent implements OnInit, AfterContentInit {
       title: "devlay.com",
       text: "One of the last short, readable domains. Used for subdomains with hosted sites I make for people.",
       link: "https://www.devlay.com",
-      source: "../assets/pl-icon.png",
+      source: "",
     },
   ];
 
@@ -185,7 +185,7 @@ export class HomeComponent implements OnInit, AfterContentInit {
       title: "pizza.devlay.com",
       text: "A website made by my brother as a recreation of the flash dough tools, and I contribute to the codebase. His site inspired my apps.",
       link: "https://www.pizza.devlay.com",
-      source: "../assets/pl-icon.png",
+      source: "",
     },
     {
       title: "Github/pslyman",
