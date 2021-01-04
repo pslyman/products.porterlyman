@@ -17,7 +17,7 @@ import { PDCproductDetailsComponent } from "./pizzaDoughCalculator/pdcproduct-de
 
 const routes: Routes = [
   {
-    path: "home",
+    path: "builder",
     component: HomeComponent,
   },
   {
@@ -105,8 +105,8 @@ const routes: Routes = [
       },
     ],
   },
-
-  { path: "", redirectTo: "/home", pathMatch: "full" },
+  { path: "home", redirectTo: "/builder", pathMatch: "full" },
+  { path: "", redirectTo: "/builder", pathMatch: "full" },
   { path: "**", redirectTo: "/pageNotFound", pathMatch: "full" },
   { path: "pageNotFound", component: PageNotFoundComponent },
 ];
