@@ -8,9 +8,9 @@ import {
 import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-site-builder',
-  templateUrl: './site-builder.component.html',
-  styleUrls: ['./site-builder.component.scss'],
+  selector: "app-site-builder",
+  templateUrl: "./site-builder.component.html",
+  styleUrls: ["./site-builder.component.scss"],
   animations: [
     trigger("cardAnimationNoStagger", [
       transition(":enter", [
@@ -36,8 +36,7 @@ export class SiteBuilderComponent implements OnInit {
       title: "Custom Domain Options",
       content: `Free subdomain: <em>yourBusinessName.devlay.com</em>.<br />
       Custom domain: <em>yourBusinessName.com</em>.<br /><br />
-      Custom domains usually run $12 a year to buy/own. I won't charge you a dime
-      more than that.<br /><br />
+      Custom domains usually run $12 a year to buy/own. I won't charge you a dime extra than that.<br /><br />
       Either way, if the name is unclaimed, it's yours! <br />`,
       toggled: false,
     },
@@ -51,7 +50,7 @@ export class SiteBuilderComponent implements OnInit {
     {
       id: 3,
       title: "Full Access and Transparency",
-      content: `You have full access to the codebase, hosting platform, and domain provider.
+      content: `You can have full access to the codebase, hosting platform, and domain provider.
       After the first year, if you want to take over the code and hosting, you can
       assume full ownership and end our business relationship.<br />`,
       toggled: false,
@@ -88,21 +87,13 @@ export class SiteBuilderComponent implements OnInit {
       title: "Maintanance",
       content: `Need to make changes to a website? You have two easy options: <br /><br />
       <span class="indented"
-        >1. Let me handle it, just tell me what you want changed.<br
+        >1. Let me handle it (recommended), just tell me what you want changed.<br
       /></span>
       <span class="indented"
-        >2. You can do it too! I build my websites to be easy to edit. I can walk
-        you through how to make text changes or add images. No coding experience
-        needed! This is a good option if your website needs to be updated
-        frequently. <br
+        >2. You can do it. I build my websites to be easy to edit. I can walk
+        you through how to make text changes or add images. This might a good option if your website needs to be updated
+        frequently.<br
       /></span>`,
-      toggled: false,
-    },
-    {
-      id: 7,
-      title: "Analytics",
-      content: `Google Analytics is technically free, but takes some work to integrate.
-      For a fee I can add analytics integration to your website.`,
       toggled: false,
     },
   ];
@@ -119,5 +110,12 @@ export class SiteBuilderComponent implements OnInit {
     if (matchedItem) {
       matchedItem.toggled = !matchedItem.toggled;
     }
+  }
+
+  openLink() {
+    window.open(
+      "https://docs.google.com/forms/d/e/1FAIpQLScTpNe6ITrX-w8lAXMufJb15kGpT80Iqj4nEP8GCqiu494Vww/viewform?embedded=true",
+      "_blank"
+    );
   }
 }

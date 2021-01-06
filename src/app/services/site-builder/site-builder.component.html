@@ -47,7 +47,7 @@
 </div>
 
 <div class="features" [@cardAnimationNoStagger]>
-  <h2>Features</h2>
+  <h2 class="margined-sub-header">Features</h2>
   <br />
   <div
     *ngFor="let item of features"
@@ -75,25 +75,23 @@
 <div class="services section-gradient end-element" [@cardAnimationNoStagger]>
   <p>
     <strong>How is this done?</strong><br />
-    For web building I use Angular (with Typescript, Javascript, HTML, CSS,
-    SASS), and Node.js.<br />
+    For web building I use Angular, with Typescript, Javascript, HTML, CSS,
+    and SASS.<br />
     Code is all hosted securely and privately from Github.com.<br />
-    For website hosting I use Vercel. They handle hosting, encryption, and
-    metrics.<br />
+    For website hosting I use Vercel. They also handle encryption.<br />
     For domain handling I use Google Domains.<br />
   </p>
   <p>
     <strong>What's the catch?</strong><br />
     None!<br />
-    <br />In the event that your website incurs very high traffic, we can
+    <br />In the event that your website incurs remarkably high traffic, we can
     discuss a higher rate to cover the cost, <em>or</em> transfer ownership so
     that you can be solely responsible for costs.<br />In the event of a
-    transferral, I will provide a prorated reimbursement, minus labor (factored
+    transferral, I can provide a prorated reimbursement, minus labor (factored
     into the full year).
   </p>
 
-  <p>
-    <strong>Interested?</strong><br />
-    This service isn't live quite yet, but check back soon!
-  </p>
+
+  <div class='button-custom' (click)="openLink()">Click here to sign up.</div>
 </div>
+
