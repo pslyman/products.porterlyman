@@ -3,10 +3,9 @@ html {
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE10+/Edge */
   user-select: none; /* Standard */
-  margin:0;
-  padding:0;
-  max-height:100vh;
-  
+  margin: 0;
+  padding: 0;
+  max-height: 100vh;
 }
 
 ::-webkit-scrollbar {
@@ -59,7 +58,9 @@ ul {
 
 @font-face {
   font-family: Rubik;
-  src: url(\assets\Rubik-Regular.ttf) format("truetype");
+  src: url("/assets/Rubik-Regular.ttf") format("truetype"),
+    url("/assets/rubik-regular-webfont.woff2") format("woff2"),
+    url("/assets/rubik-regular-webfont.woff") format("woff");
 }
 
 .button {
@@ -137,7 +138,6 @@ ul {
 }
 
 @media (max-width: 1250px) {
-
   .button-light {
     h4 {
       margin: auto;
@@ -148,7 +148,6 @@ ul {
 
 @media (max-width: 530px) {
   .button-light {
-    
     h4 {
       margin: auto;
       width: 100%;
