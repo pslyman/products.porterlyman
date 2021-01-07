@@ -45,7 +45,7 @@ h2,
 h3,
 h4,
 p {
-  font-family: Rubik, Verdana;
+  font-family: "Rubik", "Verdana";
   color: #4e4e4e;
 }
 
@@ -57,7 +57,7 @@ ul {
 }
 
 @font-face {
-  font-family: Rubik;
+  font-family: "Rubik";
   src: url("/assets/Rubik-Regular.ttf") format("truetype"),
     url("/assets/rubik-regular-webfont.woff2") format("woff2"),
     url("/assets/rubik-regular-webfont.woff") format("woff");
