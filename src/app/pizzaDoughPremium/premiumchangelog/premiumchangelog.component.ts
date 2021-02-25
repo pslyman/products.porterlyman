@@ -61,6 +61,7 @@ export class PremiumchangelogComponent implements OnInit {
     {version: "1.7.2", notes: "New chime"},
     {version: "1.7.3", notes: "Updates to wording<br />- Added tooltips<br />- Quality of life improvements"},
     {version: "1.7.4", notes: "Fixed typos and wording issues"},
+    {version: "1.7.5", notes: "Fixed issue where Preferment by Total Water % could not go above the Hydration %.<br />Fixed same issue with Yeast.<br />Thank you to the person who found this bug!"},
   ]
 
   constructor() { }
