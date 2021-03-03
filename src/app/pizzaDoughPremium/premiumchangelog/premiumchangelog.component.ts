@@ -63,6 +63,7 @@ export class PremiumchangelogComponent implements OnInit {
     {version: "1.7.4", notes: "Fixed typos and wording issues"},
     {version: "1.7.5", notes: "Fixed issue where Preferment by Total Water % could not go above the Hydration %.<br />- Fixed same issue with Yeast.<br />Thank you to the person who found this bug!"},
     {version: "1.7.6", notes: "Added a save button to the Calculator tab.<br />- Maintain order of saved recipes (consistently alphabetized).<br />- Fix notes to retain newlines and spacing.<br />- Flattened Saved Recipes and moved buttons down to allow more space on smaller screens."},
+    {version: "1.7.7", notes: "Overhaul of Notes section<br />- Notes now support Markdown!"},
   ]
 
   constructor() { }
