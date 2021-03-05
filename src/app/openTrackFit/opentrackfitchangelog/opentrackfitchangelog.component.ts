@@ -42,7 +42,8 @@ export class OpenTrackFitChangelogComponent implements OnInit {
     {version: "1.1.11", notes: "Notification scheduled with OS so they'll notify you even if the app goes to sleep or is killed<br/>- More animation cleanup"},
     {version: "1.1.12", notes: "New chime<br/>- Add New modal closes after adding, in order to provide more intuitive experience"},
     {version: "1.1.13", notes: "Fixed issue with workout list not saving on increment/de-increments, and timer finishing a task.<br/>- Fixed flashing when defaulting to dark mode."},
-  ]
+    {version: "1.1.14", notes: "The actual fix for screen flashing<br/>- Fixed cloudSettings aggregation/duplicating issue"},
+]
 
   ngOnInit(): void {
   }
