@@ -65,6 +65,7 @@ export class PremiumchangelogComponent implements OnInit {
     {version: "1.7.6", notes: "Added a save button to the Calculator tab.<br />- Maintain order of saved recipes (consistently alphabetized).<br />- Fix notes to retain newlines and spacing.<br />- Flattened Saved Recipes and moved buttons down to allow more space on smaller screens."},
     {version: "1.7.7", notes: "Overhaul of Notes section<br />- Notes now support Markdown!"},
     {version: "1.7.8", notes: "Added Deeplinking (beta testing)<br />- Minor refactoring and cleanup"},
+    {version: "1.8.0", notes: "Refinement to notes editor styling<br />- Tiny fixes"},
   ]
 
   constructor() { }
