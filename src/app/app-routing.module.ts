@@ -1,3 +1,4 @@
+import { SociallinkerDetailsComponent } from './social-linker/sociallinker-details/sociallinker-details.component';
 import { AppBuilderComponent } from "./services/app-builder/app-builder.component";
 import { SiteBuilderComponent } from "./services/site-builder/site-builder.component";
 import { ServicesComponent } from "./services/services.component";
@@ -14,6 +15,8 @@ import { OpenTrackFitChangelogComponent } from "./openTrackFit/opentrackfitchang
 import { HomeComponent } from "./home/home.component";
 import { PDPproductDetailsComponent } from "./pizzaDoughPremium/pdpproduct-details/pdpproduct-details.component";
 import { PDCproductDetailsComponent } from "./pizzaDoughCalculator/pdcproduct-details/pdcproduct-details.component";
+import { SiteDemoComponent } from "./services/site-builder/site-demo/site-demo.component";
+import { SocialLinkerComponent } from "./social-linker/social-linker.component";
 
 const routes: Routes = [
   {
@@ -85,6 +88,23 @@ const routes: Routes = [
     ],
   },
   {
+    path: "SocialLinker",
+    component: SocialLinkerComponent,
+    children: [
+      { path: "about", component: SociallinkerDetailsComponent },
+      {
+        path: "SocialLinker/**",
+        redirectTo: "/pageNotFound",
+        pathMatch: "full",
+      },
+      {
+        path: "",
+        redirectTo: "/SocialLinker/about",
+        pathMatch: "full",
+      },
+    ],
+  },
+  {
     path: "services",
     component: ServicesComponent,
     children: [
@@ -92,6 +112,21 @@ const routes: Routes = [
         path: "site-builder",
         component: SiteBuilderComponent,
       },
+      {
+        path: "site-demo",
+        component: SiteDemoComponent,
+        children: [
+          {
+            path: "home",
+            component: SiteBuilderComponent,
+          },
+          /*           {
+                      path: "site-demo",
+                      component: SiteDemoComponent,
+                    }, */
+        ],
+      },
+
       { path: "app-builder", component: AppBuilderComponent },
       {
         path: "services/**",
@@ -116,4 +151,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

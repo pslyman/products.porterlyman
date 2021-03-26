@@ -47,6 +47,7 @@ h4,
 p {
   font-family: "Rubik", "Verdana";
   color: #4e4e4e;
+
 }
 
 ul {
@@ -76,6 +77,8 @@ ul {
     display: flex;
     align-items: center;
     color: rgb(228, 228, 228);
+    font-size: 1rem;
+    margin-top: 6px;
   }
   h4:hover {
     cursor: pointer;

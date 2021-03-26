@@ -21,6 +21,9 @@ import { PDCproductDetailsComponent } from './pizzaDoughCalculator/pdcproduct-de
 import { ServicesComponent } from './services/services.component';
 import { SiteBuilderComponent } from './services/site-builder/site-builder.component';
 import { AppBuilderComponent } from './services/app-builder/app-builder.component';
+import { SiteDemoComponent } from './services/site-builder/site-demo/site-demo.component';
+import { SocialLinkerComponent } from './social-linker/social-linker.component';
+import { SociallinkerDetailsComponent } from './social-linker/sociallinker-details/sociallinker-details.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +41,10 @@ import { AppBuilderComponent } from './services/app-builder/app-builder.componen
     PDCproductDetailsComponent,
     ServicesComponent,
     SiteBuilderComponent,
-    AppBuilderComponent
+    AppBuilderComponent,
+    SiteDemoComponent,
+    SocialLinkerComponent,
+    SociallinkerDetailsComponent
   ],
   imports: [
     BrowserModule,
