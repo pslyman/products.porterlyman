@@ -66,6 +66,7 @@ export class PremiumchangelogComponent implements OnInit {
     {version: "1.7.7", notes: "Overhaul of Notes section<br />- Notes now support Markdown!"},
     {version: "1.7.8", notes: "Added Deeplinking (beta testing)<br />- Minor refactoring and cleanup"},
     {version: "1.8.0", notes: "Refinement to notes editor styling<br />- Tiny fixes"},
+    {version: "1.8.2", notes: "Cleanup, simplifying, and adding an FAQ<br />- Clarified wording in sync backup button"},
   ]
 
   constructor() { }
