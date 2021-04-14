@@ -61,7 +61,7 @@ history = [
    {version: "1.7.5", notes: "Fixed issue where Preferment by Total Water % could not go above the Hydration %.<br />Fixed same issue with Yeast.<br />Thank you to the person who found this bug!"},
    {version: "1.8.1", notes: "New preferment tooltips<br />- Better UI for small devices<br />- Misc minor updates and fixes"},
    {version: "1.8.2", notes: "Cleanup, simplifying, and adding an FAQ"},
-   {version: "1.8.3", notes: "Typo"},
+   {version: "1.8.4", notes: "Typos"},
 ]
 
   constructor() { }
