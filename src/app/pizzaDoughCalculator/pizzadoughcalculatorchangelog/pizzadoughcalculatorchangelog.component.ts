@@ -62,6 +62,7 @@ history = [
    {version: "1.8.1", notes: "New preferment tooltips<br />- Better UI for small devices<br />- Misc minor updates and fixes"},
    {version: "1.8.2", notes: "Cleanup, simplifying, and adding an FAQ"},
    {version: "1.8.4", notes: "Typos"},
+   {version: "1.8.5", notes: 'Fixed "Pizza Shape" header position issue'},
 ]
 
   constructor() { }
