@@ -73,6 +73,7 @@ export class PremiumchangelogComponent implements OnInit {
     { version: "1.9.2", notes: 'Fix to Cloud Settings merging, not replacing<br ->- Fixed visual bug within notes' },
     { version: "1.10.4", notes: 'Cloud backups occur automatically now<br> - Option to export and import a JSON file'},
     { version: "1.10.6", notes: 'Remove font-size scaling with Android settings. I may revert this in the future with a better fix, but for now it causes issues with element overlap. <br> - Remove requirement for storage permissions<br> - Permission-less backups/restore using a JSON file will happen in the apps external scoped directory. More details in the app.'},
+    { version: "1.10.7", notes: 'Correction of wording'},
   ]
 
   constructor() { }
