@@ -76,6 +76,7 @@ export class PremiumchangelogComponent implements OnInit {
     { version: "1.10.7", notes: 'Correction of wording'},
     { version: "1.10.9", notes: 'First completed multi-platform build, including Android, iOS, and Web<br>- Public beta started for iOS'},
     { version: "1.10.10", notes: 'Fixed keyboard behavior on iOS.'},
+    { version: "1.10.12", notes: 'Fixed (webapp and app) issues with QR codes not opening in the app sometimes.<br>- Fixed issue where sharing recipe links may enter "null" into title and notes, if previously left empty.<br>- Allow orientation rotation on bigger devices, namely tablets.<br>- Clarified wording in value placeholders from "Default" to "Typical" to avoid confusion, as being left empty will not default to any value.<br>- Fixed visual bug with notes fadeout'},
   ]
 
   constructor() { }
