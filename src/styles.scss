@@ -47,7 +47,6 @@ h4,
 p {
   font-family: "Rubik", "Verdana";
   color: #4e4e4e;
-
 }
 
 ul {
@@ -132,8 +131,13 @@ ul {
 
 .google-play-button {
   height: 80px;
+  margin-left: -16px;
+}
 
-  margin-left: -8px;
+.app-store-button {
+  height: 53.6px;
+  margin-left: -3px;
+  cursor: pointer;
 }
 
 .google-play-button:hover {

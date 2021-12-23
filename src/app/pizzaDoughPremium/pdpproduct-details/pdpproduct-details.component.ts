@@ -40,4 +40,8 @@ export class PDPproductDetailsComponent implements OnInit {
       "_blank"
     );
   }
+
+  openInAppStore() {
+    window.open("https://testflight.apple.com/join/4CqvnA3d", "_blank");
+  }
 }
