@@ -22,32 +22,35 @@
     <p>
       <a routerLink="../changelog">Changelog</a>
     </p>
-    <div>
-      <a (click)="googlePlay()">
-        <img
-          alt="Get it on Google Play"
-          src="../../../assets/google-play-badge.png"
-          class="google-play-button"
-        />
-      </a>
+    <div style="display: flex">
+      <div>
+        <a (click)="googlePlay()">
+          <img
+            alt="Get it on Google Play"
+            src="../../../assets/google-play-badge.png"
+            class="google-play-button"
+          />
+        </a>
+      </div>
+      <div>
+        <a (click)="openInAppStore()">
+          <img
+            alt="Get it on App Store"
+            src="../../../assets/app-store-badge.png"
+            class="app-store-button"
+          />
+        </a>
+      </div>
     </div>
-    <div>
-      <a (click)="openInAppStore()">
-        <img
-          alt="Get it on App Store"
-          src="../../../assets/app-store-badge.png"
-          class="app-store-button"
-        />
-      </a>
-      <p class="paragraph-text">
-        Note: the 
-        <a
-          href="https://apps.apple.com/us/app/testflight/id899247664"
-          target="“_blank”"
-          >official Testflight app</a
-        >
-        is required to download this app on Apple devices. Currently the app is in testing.
-      </p>
-    </div>
+    <p class="paragraph-text" style="padding-top: 10px">
+      Note: the
+      <a
+        href="https://apps.apple.com/us/app/testflight/id899247664"
+        target="“_blank”"
+        >official Testflight app</a
+      >
+      is required to download this app on Apple devices. Currently the app is in
+      testing.
+    </p>
   </div>
 </body>
