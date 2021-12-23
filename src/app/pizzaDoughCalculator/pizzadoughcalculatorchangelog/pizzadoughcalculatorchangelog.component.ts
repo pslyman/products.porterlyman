@@ -65,6 +65,7 @@ export class PizzaDoughCalculatorChangeLog implements OnInit {
     { version: "1.8.5", notes: 'Fixed "Pizza Shape" header position issue' },
     { version: "1.9.2", notes: 'Full Angular upgrade - latest version<br ->- Full Ionic upgrade - latest version<br ->- Updated visual design<br ->- Better accessability in all modes<br ->- Better device detection and localized testing<br ->- Streamlined code for the future of cross-platform compatibility<br ->- Little bit nicer animations<br ->- Looks nicer and works better on tablets' },
     { version: "1.10.6", notes: 'Remove font-size scaling with Android settings. I may revert this in the future with a better fix, but for now it causes issues with element overlap.'},
+    { version: "1.10.12", notes: 'Unified codebase for cross-platform<br>- Allow orientation rotation on bigger devices, namely tablets<br>- Clarified wording in value placeholders from "Default" to "Typical" to avoid confusion, as being left empty will not default to any value.'},
   ]
 
   constructor() { }
