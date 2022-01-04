@@ -40,4 +40,9 @@ export class PDCproductDetailsComponent implements OnInit {
       "_blank"
     );
   }
+
+  
+  openInAppStore() {
+    window.open("https://apps.apple.com/us/app/pizza-dough-premium/id1597616314", "_blank");
+  }
 }

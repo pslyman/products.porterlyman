@@ -78,6 +78,7 @@ export class PremiumchangelogComponent implements OnInit {
     { version: "1.10.10", notes: 'Fixed keyboard behavior on iOS.'},
     { version: "1.10.12", notes: 'Fixed (webapp and app) issues with QR codes not opening in the app sometimes.<br>- Fixed issue where sharing recipe links may enter "null" into title and notes, if previously left empty.<br>- Allow orientation rotation on bigger devices, namely tablets.<br>- Clarified wording in value placeholders from "Default" to "Typical" to avoid confusion, as being left empty will not default to any value.<br>- Fixed visual bug with notes fadeout'},
     { version: "1.10.13", notes: 'Config issue with iPads not changing app orientation.'},
+    { version: "1.10.14", notes: 'iOS status bar text color fix for notch-less devices.'},
   ]
 
   constructor() { }
