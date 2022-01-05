@@ -6,6 +6,7 @@ import {
   style,
 } from "@angular/animations";
 import { Component, OnInit } from "@angular/core";
+import { ActivatedRoute, Params, Router } from "@angular/router";
 
 @Component({
   selector: "app-both-pizza-apps",
@@ -29,9 +30,30 @@ import { Component, OnInit } from "@angular/core";
   ],
 })
 export class BothPizzaAppsComponent implements OnInit {
-  constructor() {}
+  constructor(private activatedRoute: ActivatedRoute, private router: Router) {}
 
-  ngOnInit(): void {}
+  specifyPlatform = false;
+  isiOS = false;
+
+  ngOnInit(): void {
+    this.activatedRoute.queryParams.subscribe((params) => {
+      if (Object.entries(params).length > 0) {
+        this.specifyPlatform = true;
+        this.isiOS = params.platform === "ios";
+      }
+    });
+  }
+
+  allPlatforms() {
+    const qParams: Params = {};
+    this.router.navigate([], {
+        relativeTo: this.activatedRoute,
+        queryParams: qParams,
+        queryParamsHandling: ''
+    }).then(() => {
+      this.specifyPlatform = false;
+    });
+  }
 
   googlePlayFree() {
     window.open(
@@ -39,9 +61,12 @@ export class BothPizzaAppsComponent implements OnInit {
       "_blank"
     );
   }
-  
+
   openInAppStoreFree() {
-    window.open("https://apps.apple.com/us/app/pizza-dough-calculator-free/id1602635238", "_blank");
+    window.open(
+      "https://apps.apple.com/us/app/pizza-dough-calculator-free/id1602635238",
+      "_blank"
+    );
   }
 
   googlePlayPremium() {
@@ -52,6 +77,9 @@ export class BothPizzaAppsComponent implements OnInit {
   }
 
   openInAppStorePremium() {
-    window.open("https://apps.apple.com/us/app/pizza-dough-premium/id1597616314", "_blank");
+    window.open(
+      "https://apps.apple.com/us/app/pizza-dough-premium/id1597616314",
+      "_blank"
+    );
   }
 }

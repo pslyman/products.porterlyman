@@ -1,3 +1,5 @@
+<div class="button" *ngIf="specifyPlatform" (click)="allPlatforms()"><h4>Click for both platforms.</h4></div>
+
 <body [@cardAnimationNoStagger]>
   <div class="header">
     <img src="../../assets/pizza-free.png" />
@@ -7,7 +9,7 @@
     <p class="paragraph-text">
       Basic version, containing all the features of the original calculators.
     </p>
-    <div>
+    <div *ngIf="!specifyPlatform || specifyPlatform && !isiOS">
       <a (click)="googlePlayFree()">
         <img
           alt="Get it on Google Play"
@@ -16,7 +18,7 @@
         />
       </a>
     </div>
-    <div>
+    <div *ngIf="!specifyPlatform || specifyPlatform && isiOS">
       <a (click)="openInAppStoreFree()">
         <img
           alt="Get it on App Store"
@@ -35,7 +37,7 @@
   </div>
   <div class="content">
     <p class="paragraph-text">The complete mobile app, with everything you need to pursue your obsession. </p>
-    <div>
+    <div *ngIf="!specifyPlatform || specifyPlatform && !isiOS">
       <a (click)="googlePlayPremium()">
         <img
           alt="Get it on Google Play"
@@ -44,7 +46,7 @@
         />
       </a>
     </div>
-    <div>
+    <div *ngIf="!specifyPlatform || specifyPlatform && isiOS">
       <a (click)="openInAppStorePremium()">
         <img
           alt="Get it on App Store"
