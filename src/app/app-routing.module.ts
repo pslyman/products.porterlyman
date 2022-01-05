@@ -21,7 +21,7 @@ import { BothPizzaAppsComponent } from './both-pizza-apps/both-pizza-apps.compon
 
 const routes: Routes = [
   {
-    path: "builder",
+    path: "home",
     component: HomeComponent,
   },
   {
@@ -146,8 +146,8 @@ const routes: Routes = [
       },
     ],
   },
-  { path: "home", redirectTo: "/builder", pathMatch: "full" },
-  { path: "", redirectTo: "/builder", pathMatch: "full" },
+  { path: "home", redirectTo: "/home", pathMatch: "full" },
+  { path: "", redirectTo: "/home", pathMatch: "full" },
   { path: "**", redirectTo: "/pageNotFound", pathMatch: "full" },
   { path: "pageNotFound", component: PageNotFoundComponent },
 ];

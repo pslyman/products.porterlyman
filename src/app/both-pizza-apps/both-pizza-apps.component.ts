@@ -64,7 +64,7 @@ export class BothPizzaAppsComponent implements OnInit {
 
   openInAppStoreFree() {
     window.open(
-      "https://apps.apple.com/us/app/pizza-dough-calculator-free/id1602635238",
+      "https://apps.apple.com/us/app/pizza-dough-calculator-basic/id1602635238",
       "_blank"
     );
   }
