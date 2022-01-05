@@ -1,6 +1,4 @@
-<div class="button" *ngIf="specifyPlatform" (click)="allPlatforms()">
-  <h4>Click for both platforms.</h4>
-</div>
+<div class="button" *ngIf="specifyPlatform" (click)="allPlatforms()"><h4>Click for both platforms.</h4></div>
 
 <body [@cardAnimationNoStagger]>
   <div class="header">
@@ -11,7 +9,7 @@
     <p class="paragraph-text">
       Basic version, containing all the features of the original calculators.
     </p>
-    <div *ngIf="!specifyPlatform || (specifyPlatform && !isiOS)">
+    <div *ngIf="!specifyPlatform || specifyPlatform && !isiOS">
       <a (click)="googlePlayFree()">
         <img
           alt="Get it on Google Play"
@@ -20,18 +18,15 @@
         />
       </a>
     </div>
-    <div *ngIf="!specifyPlatform || (specifyPlatform && isiOS)">
-      <a>
-        <!-- (click)="openInAppStoreFree()" -->
+    <div *ngIf="!specifyPlatform || specifyPlatform && isiOS">
+      <a (click)="openInAppStoreFree()">
         <img
-          style="cursor: not-allowed; opacity: 0.5;"
           alt="Get it on App Store"
           src="../../assets/app-store-badge.png"
           class="app-store-button"
         />
       </a>
     </div>
-    (iOS version available very soon)
   </div>
 </body>
 
@@ -41,11 +36,8 @@
     <h1>Pizza Dough Premium</h1>
   </div>
   <div class="content">
-    <p class="paragraph-text">
-      The complete mobile app, with everything you need to pursue your
-      obsession.
-    </p>
-    <div *ngIf="!specifyPlatform || (specifyPlatform && !isiOS)">
+    <p class="paragraph-text">The complete mobile app, with everything you need to pursue your obsession. </p>
+    <div *ngIf="!specifyPlatform || specifyPlatform && !isiOS">
       <a (click)="googlePlayPremium()">
         <img
           alt="Get it on Google Play"
@@ -54,7 +46,7 @@
         />
       </a>
     </div>
-    <div *ngIf="!specifyPlatform || (specifyPlatform && isiOS)">
+    <div *ngIf="!specifyPlatform || specifyPlatform && isiOS">
       <a (click)="openInAppStorePremium()">
         <img
           alt="Get it on App Store"
