@@ -15,7 +15,7 @@ html {
 
 html,
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: #d7ebeb;
   margin: 0;
 }
 
@@ -130,12 +130,15 @@ ul {
 }
 
 .google-play-button {
+/*   height: 60px; */
   height: 80px;
   margin-left: -16px;
 }
 
 .app-store-button {
-  margin-top: 13px;
+/*   margin-top: 10px;
+  height: 40px; */
+  /* margin-top: 13px; */
   height: 53.6px;
   margin-left: -3px;
   cursor: pointer;

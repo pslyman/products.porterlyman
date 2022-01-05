@@ -1,41 +1,43 @@
-<div class="button"><h4><a href="https://www.porterlyman.com/aboutMe?p=portfolio">Home</a></h4></div>
+<div class="button">
+  <h4><a href="https://www.porterlyman.com/aboutMe?p=portfolio">Home</a></h4>
+</div>
 
 <body [@cardAnimationNoStagger]>
-  
   <div class="header">
     <img src="../../../assets/pizza-free.png" />
     <h1>Pizza Dough Calculator</h1>
   </div>
   <div class="content">
     <p class="paragraph-text">
-      Built on decades old formulas, this is a mobile recreation of well-known pizza dough tools from pizzamaking.com. <br/><br/>
-      Never figured out a good pizza recipe? This is the end all, for beginners and the experienced. The app does the heavy lifting, you just enter how you want your pizza and it will walk you through the rest.<br><br>
-      This is the free version, and contains everything you need. 
-
+      Built on decades old formulas, this is a mobile recreation of well-known
+      pizza dough tools from pizzamaking.com. <br /><br />
+      Never figured out a good pizza recipe? This is the end all, for beginners
+      and the experienced. The app does the heavy lifting, you just enter how
+      you want your pizza and it will walk you through the rest.<br /><br />
+      This is the free version, and contains everything you need.
     </p>
 
     <p>
       <a routerLink="../changelog">Changelog</a>
     </p>
-    <div style="display: flex">
-      <div>
-        <a (click)="googlePlay()">
-          <img
-            alt="Get it on Google Play"
-            src="../../../assets/google-play-badge.png"
-            class="google-play-button"
-          />
-        </a>
-      </div>
-      <div>
-        <a (click)="openInAppStore()">
-          <img
-            alt="Get it on App Store"
-            src="../../../assets/app-store-badge.png"
-            class="app-store-button"
-          />
-        </a>
-      </div>
+
+    <div>
+      <a (click)="googlePlay()">
+        <img
+          alt="Get it on Google Play"
+          src="../../../assets/google-play-badge.png"
+          class="google-play-button"
+        />
+      </a>
+    </div>
+    <div>
+      <a (click)="openInAppStore()">
+        <img
+          alt="Get it on App Store"
+          src="../../../assets/app-store-badge.png"
+          class="app-store-button"
+        />
+      </a>
     </div>
   </div>
 </body>

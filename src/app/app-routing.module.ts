@@ -17,6 +17,7 @@ import { PDPproductDetailsComponent } from "./pizzaDoughPremium/pdpproduct-detai
 import { PDCproductDetailsComponent } from "./pizzaDoughCalculator/pdcproduct-details/pdcproduct-details.component";
 import { SiteDemoComponent } from "./services/site-builder/site-demo/site-demo.component";
 import { SocialLinkerComponent } from "./social-linker/social-linker.component";
+import { BothPizzaAppsComponent } from './both-pizza-apps/both-pizza-apps.component';
 
 const routes: Routes = [
   {
@@ -65,6 +66,11 @@ const routes: Routes = [
         pathMatch: "full",
       },
     ],
+  },
+  {
+    path: "PizzaApps",
+    component: BothPizzaAppsComponent,
+    pathMatch: "full",
   },
   {
     path: "OpenTrackFit",

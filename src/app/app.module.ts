@@ -24,6 +24,7 @@ import { AppBuilderComponent } from './services/app-builder/app-builder.componen
 import { SiteDemoComponent } from './services/site-builder/site-demo/site-demo.component';
 import { SocialLinkerComponent } from './social-linker/social-linker.component';
 import { SociallinkerDetailsComponent } from './social-linker/sociallinker-details/sociallinker-details.component';
+import { BothPizzaAppsComponent } from './both-pizza-apps/both-pizza-apps.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { SociallinkerDetailsComponent } from './social-linker/sociallinker-detai
     AppBuilderComponent,
     SiteDemoComponent,
     SocialLinkerComponent,
-    SociallinkerDetailsComponent
+    SociallinkerDetailsComponent,
+    BothPizzaAppsComponent
   ],
   imports: [
     BrowserModule,
