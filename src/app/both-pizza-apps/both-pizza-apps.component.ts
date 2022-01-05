@@ -33,17 +33,25 @@ export class BothPizzaAppsComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  googlePlay() {
+  googlePlayFree() {
     window.open(
       "https://play.google.com/store/apps/details?id=pizza.dough.calculator.free",
       "_blank"
     );
   }
+  
+  openInAppStoreFree() {
+    window.open("https://apps.apple.com/us/app/pizza-dough-calculator-free/id1602635238", "_blank");
+  }
 
-  openInAppStore() {
+  googlePlayPremium() {
     window.open(
-      "https://apps.apple.com/us/app/pizza-dough-premium/id1602635238",
+      "https://play.google.com/store/apps/details?id=pizza.dough.calculator",
       "_blank"
     );
+  }
+
+  openInAppStorePremium() {
+    window.open("https://apps.apple.com/us/app/pizza-dough-premium/id1597616314", "_blank");
   }
 }

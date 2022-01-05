@@ -43,6 +43,6 @@ export class PDCproductDetailsComponent implements OnInit {
 
   
   openInAppStore() {
-    window.open("https://apps.apple.com/us/app/pizza-dough-premium/id1602635238", "_blank");
+    window.open("https://apps.apple.com/us/app/pizza-dough-calculator-free/id1602635238", "_blank");
   }
 }
