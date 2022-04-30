@@ -70,6 +70,8 @@ export class PizzaDoughCalculatorChangeLog implements OnInit {
     { version: "1.10.14", notes: 'iOS status bar text color fix for notch-less devices.'},
     { version: "1.10.15", notes: '(iOS) Updated link to Premium Version on app store'},
     { version: "1.12.16", notes: 'About page renamed to Misc and now has tab dividers<br>- New setting: decimal precision<br>- Added Whole Wheat (including White Whole Wheat) and Rice Flour to the Additional Ingredients list<br>- Fixed duplicating FAQ bug.'},
+    { version: "1.14.18", notes: 'Sorted Additional Ingredients alphabetically<br>- Split water and flour in the app<br>- Pan diagram ported to app and sized up<br>- Bug fixes'},
+    { version: "1.14.19-1.14.24", notes: 'Bug fixes'},
   ]
 
   constructor() { }
