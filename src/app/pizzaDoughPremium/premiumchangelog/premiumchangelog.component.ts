@@ -82,6 +82,7 @@ export class PremiumchangelogComponent implements OnInit {
     { version: "1.12.16", notes: 'About page renamed to Misc and now has tab dividers<br>- New setting: decimal precision<br>- Added Whole Wheat (including White Whole Wheat) and Rice Flour to the Additional Ingredients list<br>- Fixed duplicating FAQ bug.'},
     { version: "1.14.18", notes: 'Sorted Additional Ingredients alphabetically<br>- Theme button moved to settings, but can be visible again through the settings tab<br>- Split water and flour in the app<br>- URL Queries (app and web) now include split flour and water values<br>- Pan diagram ported to app and sized up<br>- Bug fixes'},
     { version: "1.14.19-1.14.24", notes: 'Bug fixes'},
+    { version: "1.14.24", notes: `Fixed water/flour swapping bug.<br>- If any of your recipes experienced a water/flour swap during the time this bug was happening, you can scroll down to Split Flour and Split Water sections. If you don't split values, you can hit the respective reset buttons, otherwise you'll need to manually switch the values and names.`},
     
   ]
 
