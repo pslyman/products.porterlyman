@@ -1,7 +1,7 @@
 <div class="button"><h4 routerLink="../about">Back</h4></div>
 
 <body [@cardAnimationNoStagger]>
-  <h2>Changelog - Pizza Dough Calculator</h2>
+  <h2>Changelog - Pizza Dough Premium</h2>
   <div *ngFor="let item of history.slice().reverse()">
     <p>{{ item.version }}<br />- <span [innerHTML]="item.notes"></span></p>
   </div>
