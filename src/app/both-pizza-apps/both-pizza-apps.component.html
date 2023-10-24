@@ -1,4 +1,6 @@
-<div class="button" *ngIf="specifyPlatform" (click)="allPlatforms()"><h4>Click for both platforms.</h4></div>
+<div class="button" *ngIf="specifyPlatform" (click)="allPlatforms()">
+  <h4>Click for both platforms.</h4>
+</div>
 
 <body [@cardAnimationNoStagger]>
   <div class="header">
@@ -9,7 +11,7 @@
     <p class="paragraph-text">
       Basic version, containing all the features of the original calculators.
     </p>
-    <div *ngIf="!specifyPlatform || specifyPlatform && !isiOS">
+    <div *ngIf="!specifyPlatform || (specifyPlatform && !isiOS)">
       <a (click)="googlePlayFree()">
         <img
           alt="Get it on Google Play"
@@ -18,7 +20,7 @@
         />
       </a>
     </div>
-    <div *ngIf="!specifyPlatform || specifyPlatform && isiOS">
+    <div *ngIf="!specifyPlatform || (specifyPlatform && isiOS)">
       <a (click)="openInAppStoreFree()">
         <img
           alt="Get it on App Store"
@@ -36,8 +38,11 @@
     <h1>Pizza Dough Premium</h1>
   </div>
   <div class="content">
-    <p class="paragraph-text">The complete mobile app, with everything you need to pursue your obsession. </p>
-    <div *ngIf="!specifyPlatform || specifyPlatform && !isiOS">
+    <p class="paragraph-text">
+      The complete mobile app, with everything you need to pursue your
+      obsession.
+    </p>
+    <div *ngIf="!specifyPlatform || (specifyPlatform && !isiOS)">
       <a (click)="googlePlayPremium()">
         <img
           alt="Get it on Google Play"
@@ -46,7 +51,7 @@
         />
       </a>
     </div>
-    <div *ngIf="!specifyPlatform || specifyPlatform && isiOS">
+    <div *ngIf="!specifyPlatform || (specifyPlatform && isiOS)">
       <a (click)="openInAppStorePremium()">
         <img
           alt="Get it on App Store"
@@ -55,5 +60,32 @@
         />
       </a>
     </div>
+  </div>
+</body>
+
+<div [@cardAnimationNoStagger] class="line-break-parent">
+  <div class="line-break"></div>
+</div>
+
+<body [@cardAnimationNoStagger]>
+  <div class="content">
+    <h5 class="paragraph-text">
+      <a href="https://www.pizza.devlay.com" target="_blank" class="underline"
+        >Dough Calculator</a
+      >
+    </h5>
+    <p>Link to the new web tool - modeled after the original Flash tools, made for web. Works on desktop and mobile.</p>
+    <h5 class="paragraph-text">
+      <a
+        href="https://www.pizza-mobile.devlay.com"
+        target="_blank"
+        class="underline"
+        >App Preview</a
+      >
+    </h5>
+    <p>
+      Link to a preview of the mobile app. Demonstrates the power of Ionic: apps for Android,
+      iOS, and web, using one single codebase.
+    </p>
   </div>
 </body>
