@@ -8,7 +8,8 @@ import { PremiumchangelogComponent } from "./pizzaDoughPremium/premiumchangelog/
 import { HomeComponent } from "./home/home.component";
 import { PDPproductDetailsComponent } from "./pizzaDoughPremium/pdpproduct-details/pdpproduct-details.component";
 import { PDCproductDetailsComponent } from "./pizzaDoughCalculator/pdcproduct-details/pdcproduct-details.component";
-import { BothPizzaAppsComponent } from './both-pizza-apps/both-pizza-apps.component';
+import { BothPizzaAppsComponent } from "./both-pizza-apps/both-pizza-apps.component";
+import { DoughRecipesComponent } from "./dough-recipes/dough-recipes.component";
 
 const routes: Routes = [
   {
@@ -63,6 +64,11 @@ const routes: Routes = [
     component: BothPizzaAppsComponent,
     pathMatch: "full",
   },
+  {
+    path: "miscellaneous-dough-recipes",
+    component: DoughRecipesComponent,
+    pathMatch: "full",
+  },
   { path: "home", redirectTo: "/home", pathMatch: "full" },
   { path: "", redirectTo: "/home", pathMatch: "full" },
   { path: "**", redirectTo: "/pageNotFound", pathMatch: "full" },
@@ -74,4 +80,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

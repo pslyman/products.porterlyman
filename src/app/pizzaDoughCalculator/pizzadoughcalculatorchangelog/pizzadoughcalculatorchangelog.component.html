@@ -2,7 +2,21 @@
 
 <body [@cardAnimationNoStagger]>
   <h2>Changelog - Pizza Dough Calculator</h2>
-  <div *ngFor="let item of history.slice().reverse()">
+  <div *ngFor="let item of (viewAll ? history : shortHistory).slice().reverse()">
     <p>{{ item.version }}<br />- <span [innerHTML]="item.notes"></span></p>
+  </div>
+  
+  <a href="javascript:void(0)" role="button" (click)="viewAll = !viewAll;">{{ viewAll ? "See less change history" : 'View all change history' }}</a>
+
+  <br />  <br />
+  <h2>Known Issues</h2>
+  <div *ngFor="let item of issues">
+    <span>- {{ item }}</span>
+  </div>
+
+  <br />
+  <h2>Requested Features</h2>
+  <div *ngFor="let item of requests">
+    <span>- {{ item }}</span>
   </div>
 </body>

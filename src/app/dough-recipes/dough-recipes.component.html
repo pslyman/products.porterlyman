@@ -1,0 +1,9 @@
+<body>
+  <h2>Miscellaneous Dough Recipes</h2>
+  <p>For non pizza related doughs. Your mileage may vary.</p>
+
+  <div *ngFor="let recipe of recipes">
+    <a href="{{ recipe.link }}">- {{ recipe.name }}</a>
+    <br /><br />
+  </div>
+</body>

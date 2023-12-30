@@ -1,5 +1,6 @@
 import { trigger, transition, animate, keyframes, style } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
+import { knownIssues, featureRequests } from '../../constants';
 
 @Component({
   selector: 'app-premiumchangelog',
@@ -24,6 +25,10 @@ import { Component, OnInit } from '@angular/core';
   ],
 })
 export class PremiumchangelogComponent implements OnInit {
+  issues = knownIssues;
+  requests = featureRequests;
+
+  viewAll = false;
 
   history = [
     { version: "1.0.0 - 1.0.1", notes: "Private beta, initial working version" },
@@ -85,11 +90,15 @@ export class PremiumchangelogComponent implements OnInit {
     { version: "1.14.24", notes: `Fixed water/flour swapping bug.<br>- If any of your recipes experienced a water/flour swap during the time this bug was happening, you can scroll down to Split Flour and Split Water sections. If you don't split values, you can hit the respective reset buttons, otherwise you'll need to manually switch the values and names.`},
     { version: "1.14.25", notes: `Fixed water/flour swapping bug.<br>- If any of your recipes experienced a water/flour swap during the time this bug was happening, you can scroll down to Split Flour and Split Water sections. If you don't split values, you can hit the respective reset buttons, otherwise you'll need to manually switch the values and names.`},
     { version: "2.0.0-2.0.1, and all release candidates", notes: `Major app rewrite for future proofing, performance, and groundwork for future enhancements. <br>- Partial redesign for convenience and design continuity <br>- Redesigned notes editor<br>- Redesigned additional ingredients picker<br>- Redesigned tips dropdowns<br>- Redesigned recipe instructions selector <br>- Updated some pictures for quality <br>- Upgrade to latest version of Ionic, Angular, and Typescript <br>- Migrated to Capacitor <br>- Added a warning for when using volumetric measurements<br>- Added clarification for "drops" measurement type<br>- Enhancements to the timer<br>- Added brand new Recipes picker<br>- Added default recipes<br>- Added "Simple Mode"<br>- Ported Nutrition Facts from the webapp, provided by Anders (thank you!)<br>- Pizza time<br>- Added onboarding screen for first time users<br>- Made sharable links and JSON much smaller<br>- Added a "please review" modal, once after two weeks<br>- Fixed bug where salt could not be 0<br>- Fixed timer formatting<br>- Created system to migrate recipes from the old version to the new one.<br>- Fix residue compensation not working (thanks Kyle for discovering this!)`},    
+    { version: "2.0.2", notes: `Fix bug where nutrition values didn't include preferment. <br>- Fix rare bug where table width was short.<br>- Made app smaller in size`},    
   ]
+
+  shortHistory = this.history.slice().reverse();
 
   constructor() { }
 
   ngOnInit(): void {
+    this.shortHistory = this.shortHistory.slice(0, 3).reverse();
   }
 
 }

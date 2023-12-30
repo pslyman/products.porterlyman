@@ -16,6 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PDPproductDetailsComponent } from './pizzaDoughPremium/pdpproduct-details/pdpproduct-details.component';
 import { PDCproductDetailsComponent } from './pizzaDoughCalculator/pdcproduct-details/pdcproduct-details.component';
 import { BothPizzaAppsComponent } from './both-pizza-apps/both-pizza-apps.component';
+import { DoughRecipesComponent } from './dough-recipes/dough-recipes.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { BothPizzaAppsComponent } from './both-pizza-apps/both-pizza-apps.compon
     HomeComponent,
     PDPproductDetailsComponent,
     PDCproductDetailsComponent,
-    BothPizzaAppsComponent
+    BothPizzaAppsComponent,
+    DoughRecipesComponent
   ],
   imports: [
     BrowserModule,
