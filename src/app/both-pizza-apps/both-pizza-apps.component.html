@@ -10,9 +10,7 @@
   <div class="content">
     <p class="paragraph-text">
       Basic version, containing all the features of the original calculators.
-      It's free! <a href="/PizzaDoughCalculator/about"
-        >Learn more.</a
-      >
+      It's free! <a href="/PizzaDoughCalculator/about">Learn more.</a>
     </p>
     <div *ngIf="!specifyPlatform || (specifyPlatform && !isiOS)">
       <a (click)="googlePlayFree()">
@@ -78,7 +76,8 @@
       >
     </h5>
     <p>
-      Link to the new web tool - modeled after the original Flash tools. Works on desktop and mobile.
+      Link to the new web tool - modeled after the original Flash tools. Works
+      on desktop and mobile.
     </p>
     <h5 class="paragraph-text">
       <a
@@ -91,6 +90,18 @@
     <p>
       Link to a preview of the mobile app. Demonstrates the power of Ionic: apps
       for Android, iOS, and web, using one single codebase.
+    </p>
+    <h5 class="paragraph-text">
+      <a
+        href="https://github.com/pslyman/Pizza-Dough-Calculator"
+        target="_blank"
+        class="underline"
+        >Calculator Code Explained</a
+      >
+    </h5>
+    <p>
+      I've open sourced the entire Calculator service for the Pizza Dough
+      Calculator tools, and explained the most notable parts in this deep dive.
     </p>
   </div>
 </body>
