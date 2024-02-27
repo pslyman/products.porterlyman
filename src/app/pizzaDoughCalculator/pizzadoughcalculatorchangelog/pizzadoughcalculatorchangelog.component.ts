@@ -81,6 +81,7 @@ export class PizzaDoughCalculatorChangeLog implements OnInit {
     { version: "2.0.0-2.0.1, and all release candidates", notes: `Major app rewrite for future proofing, performance, and groundwork for future enhancements. <br>- Partial redesign for convenience and design continuity <br>- Redesigned additional ingredients picker<br>- Redesigned tips dropdowns<br>- Redesigned recipe instructions selector <br>- Updated some pictures for quality <br>- Upgrade to latest version of Ionic, Angular, and Typescript <br>- Migrated to Capacitor <br>- Added a warning for when using volumetric measurements<br>- Added clarification for "drops" measurement type<br>- Added brand new Recipes picker<br>- Added default recipes<br>- Added "Simple Mode"<br>- Ported Nutrition Facts from the webapp, provided by Anders (thank you!)<br>- Added onboarding screen for first time users<br>- Added a "please review" modal, once after two weeks<br>- Fixed bug where salt could not be 0<br>- Fix residue compensation not working (thanks Kyle for discovering this!)`},    
     { version: "2.0.2", notes: `Fix bug where nutrition values didn't include preferment. <br>- Fix rare bug where table width was short. <br>- Fix incorrect app review links.<br>- Made app smaller in size`},    
     { version: "2.0.5", notes: `- Fix validation error when selecting "no prefermentation".`},    
+    { version: "2.0.7", notes: `Small bug fixes`},    
   ]
 
   shortHistory = this.history.slice().reverse();
