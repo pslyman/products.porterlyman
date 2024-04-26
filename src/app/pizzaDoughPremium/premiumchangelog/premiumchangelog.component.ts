@@ -93,6 +93,7 @@ export class PremiumchangelogComponent implements OnInit {
     { version: "2.0.2", notes: `Fix bug where nutrition values didn't include preferment. <br>- Fix rare bug where table width was short.<br>- Made app smaller in size`},    
     { version: "2.0.5", notes: `Fix timer automatically opening when the app does.<br>- Fix validation error when selecting "no prefermentation"<br>- Fix issue where creating a recipe link would sometimes link the previous recipe instead<br>- Add disclaimer regarding the timer functionality `},    
     { version: "2.0.8", notes: `Change how notification permissions are handled<br>- Small bug fixes`},    
+    { version: "2.0.9", notes: `Fixed issue where a saved recipe may not properly open<br>- Corrected spelling errors and text spacing<br>- Misc other fixes`},   
   ]
 
   shortHistory = this.history.slice().reverse();
