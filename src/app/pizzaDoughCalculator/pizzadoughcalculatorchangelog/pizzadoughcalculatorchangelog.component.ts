@@ -82,7 +82,7 @@ export class PizzaDoughCalculatorChangeLog implements OnInit {
     { version: "2.0.2", notes: `Fix bug where nutrition values didn't include preferment. <br>- Fix rare bug where table width was short. <br>- Fix incorrect app review links.<br>- Made app smaller in size`},    
     { version: "2.0.5", notes: `- Fix validation error when selecting "no prefermentation".`},    
     { version: "2.0.8", notes: `Small bug fixes`},    
-    { version: "2.0.9", notes: `Fixed issue where a saved recipe may not properly open<br>- Corrected spelling errors and text spacing<br>- Misc other fixes`},   
+    { version: "2.0.10", notes: `Fixed issue where a saved recipe may not properly open<br>- Corrected spelling errors and text spacing<br>- Misc other fixes`},   
   ]
 
   shortHistory = this.history.slice().reverse();
