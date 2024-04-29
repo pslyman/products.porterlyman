@@ -5,17 +5,12 @@ import { RouterModule, Routes } from "@angular/router";
 import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
 import { PizzaDoughCalculatorChangeLog } from "./pizzaDoughCalculator/pizzadoughcalculatorchangelog/pizzadoughcalculatorchangelog.component";
 import { PremiumchangelogComponent } from "./pizzaDoughPremium/premiumchangelog/premiumchangelog.component";
-import { HomeComponent } from "./home/home.component";
 import { PDPproductDetailsComponent } from "./pizzaDoughPremium/pdpproduct-details/pdpproduct-details.component";
 import { PDCproductDetailsComponent } from "./pizzaDoughCalculator/pdcproduct-details/pdcproduct-details.component";
 import { BothPizzaAppsComponent } from "./both-pizza-apps/both-pizza-apps.component";
 import { DoughRecipesComponent } from "./dough-recipes/dough-recipes.component";
 
 const routes: Routes = [
-  {
-    path: "home",
-    component: HomeComponent,
-  },
   {
     path: "PizzaDoughCalculator",
     component: PizzaDoughCalculator,

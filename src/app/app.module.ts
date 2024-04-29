@@ -1,4 +1,3 @@
-import { HomeComponent } from './home/home.component';
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 
@@ -26,7 +25,6 @@ import { DoughRecipesComponent } from './dough-recipes/dough-recipes.component';
     PizzaDoughCalculator,
     PizzaDoughCalculatorChangeLog,
     PremiumchangelogComponent,
-    HomeComponent,
     PDPproductDetailsComponent,
     PDCproductDetailsComponent,
     BothPizzaAppsComponent,
