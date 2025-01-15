@@ -157,6 +157,20 @@ ul {
   cursor: pointer;
 }
 
+.notice {
+  background-color: #eeba8b69;
+}
+
+.normal-list {
+  list-style-type: unset;
+  font-weight: unset;
+  padding: unset;
+  margin: unset;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  font-size: 15px;
+}
+
 @media (max-width: 1250px) {
   .button-light {
     h4 {

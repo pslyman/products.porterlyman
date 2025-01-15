@@ -9,6 +9,7 @@ import { PDPproductDetailsComponent } from "./pizzaDoughPremium/pdpproduct-detai
 import { PDCproductDetailsComponent } from "./pizzaDoughCalculator/pdcproduct-details/pdcproduct-details.component";
 import { BothPizzaAppsComponent } from "./both-pizza-apps/both-pizza-apps.component";
 import { DoughRecipesComponent } from "./dough-recipes/dough-recipes.component";
+import { NoticeComponent } from "./both-pizza-apps/notice/notice.component";
 
 const routes: Routes = [
   {
@@ -57,6 +58,11 @@ const routes: Routes = [
   {
     path: "PizzaApps",
     component: BothPizzaAppsComponent,
+    pathMatch: "full",
+  },
+  {
+    path: "PizzaApps/notice",
+    component: NoticeComponent,
     pathMatch: "full",
   },
   {

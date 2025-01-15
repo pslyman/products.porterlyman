@@ -1,8 +1,26 @@
 h4 a {
-    text-decoration: none; /* no underline */
-    color: inherit
+  text-decoration: none; /* no underline */
+  color: inherit;
 }
 
 .underline {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+
+.inverted-notice {
+  background-color: #202020;
+  color: #f7f7f7;
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  li,
+  span {
+    color: #f7f7f7;
+  }
+
+  a {
+    color: #6fb4ff;
+  }
 }

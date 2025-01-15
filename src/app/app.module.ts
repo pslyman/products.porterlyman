@@ -16,6 +16,7 @@ import { PDPproductDetailsComponent } from './pizzaDoughPremium/pdpproduct-detai
 import { PDCproductDetailsComponent } from './pizzaDoughCalculator/pdcproduct-details/pdcproduct-details.component';
 import { BothPizzaAppsComponent } from './both-pizza-apps/both-pizza-apps.component';
 import { DoughRecipesComponent } from './dough-recipes/dough-recipes.component';
+import { NoticeComponent } from "./both-pizza-apps/notice/notice.component";
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { DoughRecipesComponent } from './dough-recipes/dough-recipes.component';
     PDPproductDetailsComponent,
     PDCproductDetailsComponent,
     BothPizzaAppsComponent,
-    DoughRecipesComponent
+    DoughRecipesComponent,
+    NoticeComponent
   ],
   imports: [
     BrowserModule,
