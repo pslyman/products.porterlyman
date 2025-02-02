@@ -1,6 +1,5 @@
 export const knownIssues = [
   "Importing JSON from clipboard will sometimes display a double-toast message instead of just one.",
-  "Notifications for the timer arriving late (needs further testing).",
 ];
 
 export const featureRequests = [
