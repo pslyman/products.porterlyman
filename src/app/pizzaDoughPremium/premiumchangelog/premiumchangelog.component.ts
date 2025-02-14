@@ -94,6 +94,7 @@ export class PremiumchangelogComponent implements OnInit {
     { version: "2.0.5", notes: `Fix timer automatically opening when the app does.<br>- Fix validation error when selecting "no prefermentation"<br>- Fix issue where creating a recipe link would sometimes link the previous recipe instead<br>- Add disclaimer regarding the timer functionality `},    
     { version: "2.0.8", notes: `Change how notification permissions are handled<br>- Small bug fixes`},    
     { version: "2.0.10", notes: `Fixed issue where a saved recipe may not properly open<br>- Corrected spelling errors and text spacing<br>- Misc other fixes`},   
+    { version: "2.01.00", notes: `Feature parity between versions. Go here to App Info -> "See all apps" to learn why.<br>- Remove timer functionality. It was unreliable and had too many limitations.`}
   ]
 
   shortHistory = this.history.slice().reverse();

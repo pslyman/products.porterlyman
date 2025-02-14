@@ -1,5 +1,6 @@
 export const knownIssues = [
   "Importing JSON from clipboard will sometimes display a double-toast message instead of just one.",
+  "If you download your cloud saves when you already have recipes saved, it'll create duplicates. When choosing to delete one duplicate, it'll instead delete both."
 ];
 
 export const featureRequests = [
