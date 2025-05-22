@@ -20,21 +20,21 @@
       It's free! <a href="/PizzaDoughCalculator/about">Learn more.</a>
     </p>
     <div *ngIf="!specifyPlatform || (specifyPlatform && !isiOS)">
-      <a (click)="googlePlayFree()">
+      <!-- <a (click)="googlePlayFree()">
         <img
           alt="Get it on Google Play"
           src="../../assets/google-play-badge.png"
           class="google-play-button"
         />
-      </a>
+      </a> -->
+      For Android: <a href="https://github.com/pslyman/Pizza-Dough-Calculator/tree/main/signed-apks/Pizza%20Calculator">Download
+        Signed APK</a>
+      <p>(Download the APK, and open it from your file manager app. It may ask you to allow installing from unofficial
+        sources.)</p>
     </div>
     <div *ngIf="!specifyPlatform || (specifyPlatform && isiOS)">
       <a (click)="openInAppStoreFree()">
-        <img
-          alt="Get it on App Store"
-          src="../../assets/app-store-badge.png"
-          class="app-store-button"
-        />
+        <img alt="Get it on App Store" src="../../assets/app-store-badge.png" class="app-store-button" />
       </a>
     </div>
   </div>
@@ -51,21 +51,21 @@
       obsession. <a href="/PizzaDoughPremium/about">Learn more.</a>
     </p>
     <div *ngIf="!specifyPlatform || (specifyPlatform && !isiOS)">
-      <a (click)="googlePlayPremium()">
+      <!-- <a (click)="googlePlayPremium()">
         <img
           alt="Get it on Google Play"
           src="../../assets/google-play-badge.png"
           class="google-play-button"
         />
-      </a>
+      </a> -->
+      For Android: <a href="https://github.com/pslyman/Pizza-Dough-Calculator/tree/main/signed-apks/Pizza%20Premium">Download Signed
+        APK</a>
+      <p>(Download the APK, and open it from your file manager app. It may ask you to allow installing from unofficial
+        sources.)</p>
     </div>
     <div *ngIf="!specifyPlatform || (specifyPlatform && isiOS)">
       <a (click)="openInAppStorePremium()">
-        <img
-          alt="Get it on App Store"
-          src="../../assets/app-store-badge.png"
-          class="app-store-button"
-        />
+        <img alt="Get it on App Store" src="../../assets/app-store-badge.png" class="app-store-button" />
       </a>
     </div>
   </div>
@@ -78,33 +78,22 @@
 <body [@cardAnimationNoStagger]>
   <div class="content">
     <h5 class="paragraph-text">
-      <a href="https://www.pizza.devlay.com" target="_blank" class="underline"
-        >Dough Calculator</a
-      >
+      <a href="https://www.pizza.devlay.com" target="_blank" class="underline">Dough Calculator</a>
     </h5>
     <p>
       Link to the new web tool - modeled after the original Flash tools. Works
       on desktop and mobile.
     </p>
     <h5 class="paragraph-text">
-      <a
-        href="https://www.pizza-mobile.devlay.com"
-        target="_blank"
-        class="underline"
-        >App Preview</a
-      >
+      <a href="https://www.pizza-mobile.devlay.com" target="_blank" class="underline">App Preview</a>
     </h5>
     <p>
       Link to a preview of the mobile app. Demonstrates the power of Ionic: apps
       for Android, iOS, and web, using one single codebase.
     </p>
     <h5 class="paragraph-text">
-      <a
-        href="https://github.com/pslyman/Pizza-Dough-Calculator"
-        target="_blank"
-        class="underline"
-        >Calculator Code Explained</a
-      >
+      <a href="https://github.com/pslyman/Pizza-Dough-Calculator" target="_blank" class="underline">Calculator Code
+        Explained</a>
     </h5>
     <p>
       I've open sourced the entire Calculator service for the Pizza Dough

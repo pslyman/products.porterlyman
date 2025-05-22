@@ -1,4 +1,6 @@
-<div class="button"><h4 ><a href="/PizzaApps">See all apps</a></h4></div>
+<div class="button">
+  <h4><a href="/PizzaApps">See all apps</a></h4>
+</div>
 
 <body [@cardAnimationNoStagger]>
   <div class="header">
@@ -20,21 +22,21 @@
     </p>
 
     <div>
-      <a (click)="googlePlay()">
+      <!-- <a (click)="googlePlay()">
         <img
           alt="Get it on Google Play"
           src="../../../assets/google-play-badge.png"
           class="google-play-button"
         />
-      </a>
+      </a> -->
+      For Android: <a href="https://github.com/pslyman/Pizza-Dough-Calculator/tree/main/signed-apks/Pizza%20Calculator">Download
+        Signed APK</a>
+      <p>(Download the APK, and open it from your file manager app. It may ask you to allow installing from unofficial
+        sources.)</p>
     </div>
     <div>
       <a (click)="openInAppStore()">
-        <img
-          alt="Get it on App Store"
-          src="../../../assets/app-store-badge.png"
-          class="app-store-button"
-        />
+        <img alt="Get it on App Store" src="../../../assets/app-store-badge.png" class="app-store-button" />
       </a>
     </div>
   </div>
